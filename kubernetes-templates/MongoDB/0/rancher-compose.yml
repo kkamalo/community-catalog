@@ -5,13 +5,14 @@
   maximum_rancher_version: v1.3.99
   questions:
     - variable: "sec_no"
-      label: "Number of Secondary nodes"
+      label: "Number of Secondary Nodes"
       required: true
       type: int
       default: 2
-      description: "should be even number"
+      description: "Must be an even number"
     - variable: "mongo_volume"
-      label: "hostpath volume for mongodb"
+      label: "Host path volume for MongoDB"
       required: true
       type: string
       default: "/data/db"
+      description: "Path on the host for MongoDB data"
